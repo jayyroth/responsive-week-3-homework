@@ -59,10 +59,17 @@
     text-align: center;
     display: block;
   }
+
+  .homeworks-heading,
+  .weather-app-heading,
+  .yogurt-heading {
+    text-align: left;
+  }
   
   .about-paragraphs {
     display: flex;
     margin: 30px 0;
+    text-align: center;
   }
   
   .about-paragraphs p {
@@ -94,4 +101,36 @@
   .img-fluid {
     max-width: 100%;
     height: auto;
+  }
+
+  @media (max-width: 576px) {
+      .homeworks-screenshot,
+      .weather-app-screenshot,
+      .yogurt-screenshot {
+          display: none;
+      }
+
+      .homeworks-section p, h4 {
+        text-align: center;
+      }
+
+      .weather-project-section p, h4 {
+        text-align: center;
+      }
+
+      .yogurt-section p, h4 {
+        text-align: center;
+      }
+
+      .homeworks-heading,
+      .weather-app-heading,
+      .yogurt-heading {
+        text-align: center;
+      }
+
+      .project-link {
+        display: block;
+        text-align: center;
+        margin: 0 30px;
+      }
   }
